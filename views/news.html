@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, initial-scale=1.0, width=device-width">
+    <title>万氏筋骨贴</title>
+	<meta content="万氏筋骨贴" name="Keywords">
+	<meta content="万氏筋骨贴,治骨养髓,针对肩周炎,颈椎病,类风湿关节炎,膝关节疾病万氏筋骨贴有奇效.跟踪指导建立康复方案,半个疗程试疗效." name="Description">
+    <link rel="stylesheet" href="./public/css/reset.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+<div class="main">
+    <header class="main_head">
+        <div class="w top-bg">
+        </div>
+        <nav>
+            <div class="w clearfix">
+                <div class="t_logo fl">
+                    <img src="./public/images/zu_11.png" alt="万氏筋骨贴字样">
+                </div>
+                <ul class="clearfix fr">
+                    <li><a href="/index">网站首页</a></li>
+                    <li><a href="/product"><span>产品中心</span></a></li>
+                    <li><a href="/news" class="hover"><span>新闻中心</span></a></li>
+                    <li><a href="/linkus"><span>联系我们</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="clearfix">
+        <div class="main_banner">
+            <img src="./public/images/banner2.png" alt="万事筋骨贴banner">
+        </div>
+        <div class="w">
+            <div class="news clearfix">
+                <div class="left_nav fl">
+                    <ul>
+                        <li><a href="/product">产品中心</a></li>
+                        <li class="active"><a href="/news"><span>新闻中心</span></a></li>
+                        <li><a href="/linkus"><span>联系我们</span></a></li>
+                    </ul>
+                </div>
+                <div class="right_content fr">
+                    <div class="wz">
+                        <span class="r">
+                            当前所在位置：
+                            <em>首页</em> &gt;
+                            <em>新闻中心</em>
+                        </span>
+                    </div>
+                    <ul class="list">
+                        {{ each newlist }}
+                        <li class="clearfix">
+                            <div class="img fl">
+                                <img src="{{ $value.image }}" alt=""/>
+                            </div>
+                            <div class="fr cnt">
+                                <p class="title"><a href="./news?id={{ $value.id }}">{{ $value.title }}</a></p>
+                                <p class="text">{{ $value.descript }}</p>
+                                <div class="clearfix">
+                                    <span class="time fl">{{ $value.time }}</span>
+                                    <a href="./news?id={{ $value.id }}" class="more fr">更多>></a>
+                                </div>
+                            </div>
+                        </li>
+                        {{ /each }}
+                    </ul>
+                    <div id="pages" class="text-c pageContain">
+                        <span class="pageinfo">共 <strong>1</strong> 页 <strong>7</strong> 条记录</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <div class="line">
+            <div class="w">
+                <ul class="clearfix">
+                    <li><a href="/index">网站首页</a></li>
+                    <li><a href="/product"><span>产品中心</span></a></li>
+                    <li><a href="/news"><span>新闻中心</span></a></li>
+                    <li><a href="/linkus"><span>联系我们</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="w">
+            <div class="bot" style="position:relative;">
+                <p>河南奔鸿医疗器械有限公司&nbsp;豫ICP备17039636号-2</p>
+                <p>咨询热线：0371-53378120 <br> 邮箱：1005432774@qq.com</p>
+                <p>公司地址：郑州市中原区陇海路与桐柏路交叉口凯旋门大厦0207室<br>技术支持： 中冠网科</p>
+                <span style="position:absolute;top: 30px;left: 58%;">
+                    <img src="./public/images/xianshi.png" alt="" style="max-width:50%;height:auto;">
+                </span>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="./public/js/jquery-2.1.3.min.js"></script>
+<script src="./public/js/swiper.min.js"></script>
+    
+<script>
+    $(function(){
+       
+    })
+</script>
+</body>
+</html>
